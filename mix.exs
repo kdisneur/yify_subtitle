@@ -11,10 +11,14 @@ defmodule YifySubtitle.Mixfile do
   end
 
   def application do
-    [applications: [:logger]]
+    [applications: [:httpoison, :logger, :poison]]
   end
 
   defp deps do
-    []
+    [
+      {:httpoison, "~> 0.6"},
+      {:mock,      "~> 0.1.0", only: :test},
+      {:poison,    "~> 1.4.0"}
+    ]
   end
 end
