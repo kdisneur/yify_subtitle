@@ -1,6 +1,11 @@
 defmodule YifySubtitleTest do
   use ExUnit.Case
 
+  setup do
+    Application.put_env(:yify_subtitle, :adapter, YifySubtitle.Adapters.InMemory)
+    {:ok, []}
+  end
+
   test "search returns list of all available subtitles" do
     expected = %YifySubtitle{
       imdb_id:   "tt0133093",

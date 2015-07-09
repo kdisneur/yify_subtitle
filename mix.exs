@@ -11,7 +11,10 @@ defmodule YifySubtitle.Mixfile do
   end
 
   def application do
-    [applications: [:httpoison, :logger, :poison]]
+    [
+      applications: [:httpoison, :logger, :poison],
+      env: [adapter: YifySubtitle.Adapters.API]
+    ]
   end
 
   defp deps do
