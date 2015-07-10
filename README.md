@@ -2,6 +2,11 @@
 
 An Elixir wrapper around [Yify Subtitles](http://www.yifysubtitles.com/).
 
+| Channel   | Link        |
+|-----------|-------------|
+| CI status | [![Circle CI](https://circleci.com/gh/kdisneur/yify_subtitle.svg?style=svg)](https://circleci.com/gh/kdisneur/yify_subtitle) |
+| Bugs      | https://github.com/kdisneur/yify_subtitle/issues |
+
 ### Installation
 
 First, add YifySubtitle to your `mix.exs` dependencies and register the app:
